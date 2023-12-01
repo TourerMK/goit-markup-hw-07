@@ -108,7 +108,12 @@ img {
 .li-item-services {
   width: calc((100% - 48px) / 3);
 }
-.card-set-images > li:hover {
+.card-set-link {
+  display: block;
+}
+.card-set-link:hover,
+.card-set-link:focus,
+.card-set-link:active {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -363,7 +368,12 @@ img {
   border-radius: 50%;
 }
 .footer-icon-color {
-  fill: var(--main-white);
+  fill: var(--light-mode);
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus,
+.footer-icon-link:active {
+  background-color: var(--green);
 }
 .container-footer {
   display: flex;
