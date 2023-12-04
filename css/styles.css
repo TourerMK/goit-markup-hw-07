@@ -110,6 +110,9 @@ img {
 }
 .card-set-link {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-set-link:hover,
 .card-set-link:focus,
@@ -157,6 +160,9 @@ img {
 .menu-item {
   color: var(--dark);
   font-weight: 500;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-item:hover,
 .menu-item:focus,
@@ -169,6 +175,9 @@ img {
 }
 .contact-item {
   color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-item:hover,
 .contact-item:focus,
@@ -220,6 +229,9 @@ img {
   background-color: var(--primary-brand);
   color: var(--main-white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn {
   min-width: 116px;
@@ -231,6 +243,9 @@ img {
   cursor: pointer;
   background-color: var(--light-mode);
   color: var(--primary-brand);
+  transition-property: border, color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus,
@@ -321,6 +336,9 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--light-slate);
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus,
@@ -341,6 +359,9 @@ img {
   height: 100%;
   background-color: var(--primary-brand);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus,
@@ -367,6 +388,9 @@ img {
   height: 100%;
   background-color: var(--primary-brand);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-color {
   fill: var(--light-mode);
@@ -387,3 +411,12 @@ img {
   color: var(--main-white);
   margin-bottom: 16px;
 }
+
+/* 
+dla głównego stylu
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+*/
