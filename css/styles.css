@@ -170,6 +170,7 @@ img {
 .menu-item:active {
   color: var(--pressed-state);
 }
+.active-item::after,
 .menu-item:hover::after,
 .menu-item:focus::after,
 .menu-item:active::after {
