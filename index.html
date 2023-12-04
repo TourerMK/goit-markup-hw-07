@@ -42,7 +42,7 @@
     <section class="section hero-bg">
       <div class="container">
         <h1 class="hero-title">Effective Solutions<br> for Your Business</h1>
-        <button type="button" class="btn hero-btn">Order Service</button>
+        <button type="button" class="btn hero-btn" data-modal-open>Order Service</button>
       </div>
     </section>
 
@@ -289,11 +289,12 @@
     </div>
   </footer>
 
-  <!-- Wszystkie Twoje znaczniki HTML, w tym znaczniki okna modalnego  -->
-
-  <!-- Umieść przed zamykającym tagiem body -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="pop-up">
+      <button type="button" class="close-btn" data-modal-close>X</button>
+    </div>
+  </div>
   <script src="./js/modal.js"></script>
-
 </body>
 
 </html>
