@@ -92,6 +92,20 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-item::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--pressed-state);
+  border-radius: 2px;
+  bottom: -1px;
+  right: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
 .menu-item:hover,
 .menu-item:focus,
 .menu-item:active {
@@ -104,14 +118,7 @@ img {
 .menu-item:hover::after,
 .menu-item:focus::after,
 .menu-item:active::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: var(--pressed-state);
-  border-radius: 2px;
-  bottom: -1px;
-  right: 0;
+  opacity: 1;
 }
 .contact {
   font-style: normal;
