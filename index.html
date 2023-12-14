@@ -266,7 +266,7 @@
           marketing & growth solutions.
         </p>
       </div>
-      <div>
+      <div class="social-media-footer-part">
         <p class="footer-icon-header">Social media</p>
         <ul class="social-icons-list footer-icons list">
           <li class="social-icon"><a class="footer-icon-link" href=""><svg width="24" height="24"
@@ -287,6 +287,20 @@
               </svg></a></li>
         </ul>
       </div>
+      <div class="subscribe">
+        <p class="footer-icon-header">Subscribe</p>
+
+        <form name="subscribe-form" autocomplete="on" novalidate class="subscribe-form">
+          <label>
+            <input type="email" name="subscribe-email" placeholder="E-mail" class="subscribe-input" />
+          </label>
+
+          <button type="submit" class="btn subscribe-btn">Subscribe<svg width="24" height="24" class="subscribe-icon">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg></button>
+        </form>
+
+      </div>
     </div>
   </footer>
 
@@ -295,6 +309,32 @@
       <button type="button" class="close-btn" data-modal-close><svg width="8" height="8" class="close-icon">
           <use href="./images/icons.svg#icon-close"></use>
         </svg></button>
+      <div class="modal-wrapper">
+        <p class="modal-header">Leave your contacts and we will call you back</p>
+
+        <form name="contact-form" autocomplete="on" novalidate class="contact-form">
+          <label>
+            Name
+            <input type="text" name="first-name" class="contact-form-input" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" class="contact-form-input" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="contact-email" class="contact-form-input" />
+          </label>
+          <label>
+            Comment
+            <textarea name="comment" rows="5" class="contact-form-input"></textarea>
+          </label>
+
+
+        </form>
+
+
+      </div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
