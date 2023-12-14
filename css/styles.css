@@ -600,10 +600,11 @@ img {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 8px;
   margin-top: 16px;
 }
 .contact-form label {
+  position: relative;
   display: flex;
   flex-direction: column;
   color: var(--light-slate);
@@ -611,13 +612,29 @@ img {
   line-height: 1.16;
   letter-spacing: 0.48px;
 }
+.contact-form label:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("./images/icons.svg#icon-subscribe");
+  fill: #434455;
+}
 .contact-form-input {
   width: 360px;
   height: 40px;
   padding: 11px 16px;
   border-radius: 4px;
-  border: 1px solid var(--primary-brand);
+  border: 1px solid var(--modal-backdrop);
   margin-top: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-input:hover,
+.contact-form-input:active,
+.contact-form-input:focus {
+  border: 1px solid var(--primary-brand);
 }
 
 @keyframes popup-anime {
