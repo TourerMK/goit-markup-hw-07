@@ -612,20 +612,19 @@ img {
   line-height: 1.16;
   letter-spacing: 0.48px;
 }
-.contact-form label:before {
+.form-icon {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background: url("./images/icons.svg#icon-subscribe");
-  fill: #434455;
+  left: 16px;
+  top: 65%;
+  transform: translateY(-50%);
+  fill: var(--dark);
 }
+
 .contact-form-input {
   width: 360px;
   height: 40px;
-  padding: 11px 16px;
+  padding: 11px 38px;
   border-radius: 4px;
   border: 1px solid var(--modal-backdrop);
   margin-top: 4px;
@@ -635,6 +634,7 @@ img {
 .contact-form-input:active,
 .contact-form-input:focus {
   border: 1px solid var(--primary-brand);
+  fill: var(--primary-brand);
 }
 
 @keyframes popup-anime {
