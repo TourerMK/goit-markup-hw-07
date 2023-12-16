@@ -493,7 +493,7 @@ img {
   gap: 24px;
 }
 .subscribe-label {
-  /* autosprawdzanie mi kazało utowrzyć te klase? */
+  /* autosprawdzanie mi kazało utworzyć te klase? */
 }
 .subscribe-input {
   border-radius: 4px;
@@ -603,11 +603,14 @@ img {
 .label-container {
   margin-bottom: 8px;
 }
-.input-container {
+.comment-container {
   margin-bottom: 16px;
 }
 .input-container {
   position: relative;
+}
+.checkbox-container {
+  margin-bottom: 24px;
 }
 .label {
   font-size: 12px;
@@ -644,6 +647,13 @@ img {
 .contact-form-input:focus {
   border-color: var(--primary-brand);
 }
+
+.contact-form-input:hover + .form-icon,
+.contact-form-input:active + .form-icon,
+.contact-form-input:focus + .form-icon {
+  fill: var(--primary-brand);
+}
+
 .textarea-contact-form {
   width: 100%;
   height: 120px;
@@ -657,11 +667,36 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--modal-backdrop);
   border-radius: 4px;
+  background-color: transparent;
 }
 .textarea-contact-form:hover,
 .textarea-contact-form:active,
 .textarea-contact-form:focus {
   border-color: var(--primary-brand);
+}
+
+.privacy-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.checkbox:checked + .privacy-span {
+  background-color: var(--pressed-state);
+  border: none;
+  fill: var(--light-mode);
+}
+
+.privacy-link {
+  color: var(--primary-brand);
 }
 
 @keyframes popup-anime {
