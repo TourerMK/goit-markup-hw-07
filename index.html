@@ -316,7 +316,7 @@
         <div class="label-container">
           <label class="label" for="user-name">Name</label>
           <div class="input-container">
-            <input id="user-name" type="text" class="contact-form-input" />
+            <input id="user-name" name="user-name" type="text" class="contact-form-input" />
             <svg width="18" height="24" class="form-icon">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -326,7 +326,7 @@
         <div class="label-container">
           <label class="label" for="phone">Phone</label>
           <div class="input-container">
-            <input id="phone" type="tel" class="contact-form-input" />
+            <input id="phone" name="phone" type="tel" class="contact-form-input" />
             <svg width="18" height="24" class="form-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -345,10 +345,10 @@
 
         <div class="comment-container">
           <label class="label" for="user-comment">Comment</label>
-          <div class="input-container">
-            <textarea id="user-comment" name="user-comment" placeholder="Text input"
-              class="textarea-contact-form" /></textarea>
-          </div>
+
+          <textarea id="user-comment" name="user-comment" placeholder="Text input"
+            class="textarea-contact-form"></textarea>
+
         </div>
 
       </form>
