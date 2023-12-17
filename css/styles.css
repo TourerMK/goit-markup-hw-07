@@ -689,12 +689,6 @@ img {
   fill: transparent;
 }
 
-.checkbox:checked + .privacy-span {
-  background-color: var(--pressed-state);
-  border: none;
-  fill: var(--light-mode);
-}
-
 .privacy-link {
   color: var(--primary-brand);
 }
