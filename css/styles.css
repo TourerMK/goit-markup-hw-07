@@ -608,14 +608,6 @@ img {
 .checkbox-container {
   margin-bottom: 24px;
 }
-.label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--light-slate);
-  display: block;
-  margin-bottom: 4px;
-}
 .form-icon {
   position: absolute;
   left: 16px;
