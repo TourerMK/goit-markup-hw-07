@@ -492,9 +492,6 @@ img {
   display: flex;
   gap: 24px;
 }
-.subscribe-label {
-  /* autosprawdzanie mi kazało utworzyć te klase? */
-}
 .subscribe-input {
   border-radius: 4px;
   border: 1px solid var(--main-white);
@@ -504,7 +501,6 @@ img {
   background-color: transparent;
   padding: 8px 16px;
   font-size: 12px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--main-white);
 }
@@ -672,6 +668,14 @@ img {
 .textarea-contact-form:focus {
   border-color: var(--primary-brand);
 }
+.label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  display: block;
+  margin-bottom: 4px;
+}
 .privacy-span {
   width: 16px;
   height: 16px;
@@ -685,14 +689,15 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.privacy-link {
-  color: var(--primary-brand);
-}
 .checkbox:checked + .label .privacy-span {
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light-mode);
 }
+.privacy-link {
+  color: var(--primary-brand);
+}
+
 @keyframes popup-anime {
   0% {
     transform: translate(250%, -50%);
