@@ -1,1 +1,1 @@
-https://tourermk.github.io/goit-markup-hw-06/
+https://tourermk.github.io/goit-markup-hw-07
